@@ -1,0 +1,10 @@
+[Unit]
+Description=Weather app that displays Vancouvers weather hourly
+
+[Timer]
+Unit=weather.service
+OnCalendar=00/1:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
